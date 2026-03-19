@@ -96,11 +96,11 @@ export default function NewHeroSection() {
                   <SectionHeading className="mt-6">Projects</SectionHeading>
                   <div className="sm:px-8 px-4">
                     <div className="grid grid-cols-1 gap-4 sm:gap-3 sm:grid-cols-2">
-                      {projects.slice(0, 4).map((project) => (
+                      {projects.slice(0, 6).map((project) => (
                         <MasonryProjectCard key={project.id} project={project} />
                       ))}
                     </div>
-                    {projects.length > 4 && (
+                    {projects.length > 6 && (
                       <div className="flex justify-center mt-6">
                         <Link
                           href="/projects"
